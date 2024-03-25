@@ -13,6 +13,16 @@
 		6557FBCA2BB1A029005D04B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6557FBC92BB1A029005D04B4 /* Preview Assets.xcassets */; };
 		6557FBD12BB1A364005D04B4 /* YoutubeSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557FBD02BB1A364005D04B4 /* YoutubeSearchView.swift */; };
 		6557FBD42BB1A372005D04B4 /* YouTubeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6557FBD32BB1A372005D04B4 /* YouTubeKit */; };
+		6557FBDE2BB1C972005D04B4 /* RSSFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557FBDD2BB1C972005D04B4 /* RSSFeedModel.swift */; };
+		6557FBE12BB1C9B3005D04B4 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6557FBE02BB1C9B3005D04B4 /* FeedKit */; };
+		6557FBE32BB1CA34005D04B4 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557FBE22BB1CA34005D04B4 /* ArticleModel.swift */; };
+		6557FBE52BB1CBDC005D04B4 /* fetchArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557FBE42BB1CBDC005D04B4 /* fetchArticles.swift */; };
+		6557FBE72BB1CF06005D04B4 /* ScrapedContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557FBE62BB1CF06005D04B4 /* ScrapedContent.swift */; };
+		6557FBEA2BB1CF20005D04B4 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 6557FBE92BB1CF20005D04B4 /* SwiftSoup */; };
+		6557FBED2BB1D46C005D04B4 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557FBEC2BB1D46C005D04B4 /* ArticleView.swift */; };
+		6557FBEF2BB1D527005D04B4 /*  ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557FBEE2BB1D527005D04B4 /*  ArticleDetailView.swift */; };
+		6557FBF12BB1D64C005D04B4 /* AddFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557FBF02BB1D64C005D04B4 /* AddFeedView.swift */; };
+		6557FBF32BB1D6E8005D04B4 /* FeedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557FBF22BB1D6E8005D04B4 /* FeedListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,14 @@
 		6557FBC62BB1A029005D04B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6557FBC92BB1A029005D04B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6557FBD02BB1A364005D04B4 /* YoutubeSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchView.swift; sourceTree = "<group>"; };
+		6557FBDD2BB1C972005D04B4 /* RSSFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSFeedModel.swift; sourceTree = "<group>"; };
+		6557FBE22BB1CA34005D04B4 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		6557FBE42BB1CBDC005D04B4 /* fetchArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchArticles.swift; sourceTree = "<group>"; };
+		6557FBE62BB1CF06005D04B4 /* ScrapedContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapedContent.swift; sourceTree = "<group>"; };
+		6557FBEC2BB1D46C005D04B4 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		6557FBEE2BB1D527005D04B4 /*  ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ArticleDetailView.swift"; sourceTree = "<group>"; };
+		6557FBF02BB1D64C005D04B4 /* AddFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFeedView.swift; sourceTree = "<group>"; };
+		6557FBF22BB1D6E8005D04B4 /* FeedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +48,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6557FBD42BB1A372005D04B4 /* YouTubeKit in Frameworks */,
+				6557FBE12BB1C9B3005D04B4 /* FeedKit in Frameworks */,
+				6557FBEA2BB1CF20005D04B4 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +77,8 @@
 			children = (
 				6557FBC22BB1A029005D04B4 /* rozellaApp.swift */,
 				6557FBC42BB1A029005D04B4 /* ContentView.swift */,
-				6557FBD02BB1A364005D04B4 /* YoutubeSearchView.swift */,
+				6557FBDC2BB1C93D005D04B4 /* FeedReed */,
+				6557FBDB2BB1C6C7005D04B4 /* YoutubeFeedExtracter */,
 				6557FBC62BB1A029005D04B4 /* Assets.xcassets */,
 				6557FBC82BB1A029005D04B4 /* Preview Content */,
 			);
@@ -70,6 +91,37 @@
 				6557FBC92BB1A029005D04B4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6557FBDB2BB1C6C7005D04B4 /* YoutubeFeedExtracter */ = {
+			isa = PBXGroup;
+			children = (
+				6557FBD02BB1A364005D04B4 /* YoutubeSearchView.swift */,
+			);
+			path = YoutubeFeedExtracter;
+			sourceTree = "<group>";
+		};
+		6557FBDC2BB1C93D005D04B4 /* FeedReed */ = {
+			isa = PBXGroup;
+			children = (
+				6557FBDD2BB1C972005D04B4 /* RSSFeedModel.swift */,
+				6557FBE22BB1CA34005D04B4 /* ArticleModel.swift */,
+				6557FBE42BB1CBDC005D04B4 /* fetchArticles.swift */,
+				6557FBE62BB1CF06005D04B4 /* ScrapedContent.swift */,
+				6557FBEB2BB1D454005D04B4 /* views */,
+			);
+			path = FeedReed;
+			sourceTree = "<group>";
+		};
+		6557FBEB2BB1D454005D04B4 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				6557FBEC2BB1D46C005D04B4 /* ArticleView.swift */,
+				6557FBF22BB1D6E8005D04B4 /* FeedListView.swift */,
+				6557FBEE2BB1D527005D04B4 /*  ArticleDetailView.swift */,
+				6557FBF02BB1D64C005D04B4 /* AddFeedView.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +142,8 @@
 			name = rozella;
 			packageProductDependencies = (
 				6557FBD32BB1A372005D04B4 /* YouTubeKit */,
+				6557FBE02BB1C9B3005D04B4 /* FeedKit */,
+				6557FBE92BB1CF20005D04B4 /* SwiftSoup */,
 			);
 			productName = rozella;
 			productReference = 6557FBBF2BB1A029005D04B4 /* rozella.app */;
@@ -121,6 +175,8 @@
 			mainGroup = 6557FBB62BB1A028005D04B4;
 			packageReferences = (
 				6557FBD22BB1A372005D04B4 /* XCRemoteSwiftPackageReference "YouTubeKit" */,
+				6557FBDF2BB1C9B3005D04B4 /* XCRemoteSwiftPackageReference "FeedKit" */,
+				6557FBE82BB1CF20005D04B4 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 			);
 			productRefGroup = 6557FBC02BB1A029005D04B4 /* Products */;
 			projectDirPath = "";
@@ -148,8 +204,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6557FBE72BB1CF06005D04B4 /* ScrapedContent.swift in Sources */,
+				6557FBDE2BB1C972005D04B4 /* RSSFeedModel.swift in Sources */,
+				6557FBE52BB1CBDC005D04B4 /* fetchArticles.swift in Sources */,
+				6557FBED2BB1D46C005D04B4 /* ArticleView.swift in Sources */,
+				6557FBF32BB1D6E8005D04B4 /* FeedListView.swift in Sources */,
+				6557FBE32BB1CA34005D04B4 /* ArticleModel.swift in Sources */,
 				6557FBC52BB1A029005D04B4 /* ContentView.swift in Sources */,
 				6557FBC32BB1A029005D04B4 /* rozellaApp.swift in Sources */,
+				6557FBEF2BB1D527005D04B4 /*  ArticleDetailView.swift in Sources */,
+				6557FBF12BB1D64C005D04B4 /* AddFeedView.swift in Sources */,
 				6557FBD12BB1A364005D04B4 /* YoutubeSearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +430,22 @@
 				kind = branch;
 			};
 		};
+		6557FBDF2BB1C9B3005D04B4 /* XCRemoteSwiftPackageReference "FeedKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nmdias/FeedKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.2;
+			};
+		};
+		6557FBE82BB1CF20005D04B4 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -373,6 +453,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6557FBD22BB1A372005D04B4 /* XCRemoteSwiftPackageReference "YouTubeKit" */;
 			productName = YouTubeKit;
+		};
+		6557FBE02BB1C9B3005D04B4 /* FeedKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6557FBDF2BB1C9B3005D04B4 /* XCRemoteSwiftPackageReference "FeedKit" */;
+			productName = FeedKit;
+		};
+		6557FBE92BB1CF20005D04B4 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6557FBE82BB1CF20005D04B4 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
