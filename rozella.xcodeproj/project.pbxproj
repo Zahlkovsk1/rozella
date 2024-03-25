@@ -11,6 +11,8 @@
 		6557FBC52BB1A029005D04B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557FBC42BB1A029005D04B4 /* ContentView.swift */; };
 		6557FBC72BB1A029005D04B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6557FBC62BB1A029005D04B4 /* Assets.xcassets */; };
 		6557FBCA2BB1A029005D04B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6557FBC92BB1A029005D04B4 /* Preview Assets.xcassets */; };
+		6557FBD12BB1A364005D04B4 /* YoutubeSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557FBD02BB1A364005D04B4 /* YoutubeSearchView.swift */; };
+		6557FBD42BB1A372005D04B4 /* YouTubeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6557FBD32BB1A372005D04B4 /* YouTubeKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		6557FBC42BB1A029005D04B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6557FBC62BB1A029005D04B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6557FBC92BB1A029005D04B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6557FBD02BB1A364005D04B4 /* YoutubeSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6557FBD42BB1A372005D04B4 /* YouTubeKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				6557FBC22BB1A029005D04B4 /* rozellaApp.swift */,
 				6557FBC42BB1A029005D04B4 /* ContentView.swift */,
+				6557FBD02BB1A364005D04B4 /* YoutubeSearchView.swift */,
 				6557FBC62BB1A029005D04B4 /* Assets.xcassets */,
 				6557FBC82BB1A029005D04B4 /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = rozella;
+			packageProductDependencies = (
+				6557FBD32BB1A372005D04B4 /* YouTubeKit */,
+			);
 			productName = rozella;
 			productReference = 6557FBBF2BB1A029005D04B4 /* rozella.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 6557FBB62BB1A028005D04B4;
+			packageReferences = (
+				6557FBD22BB1A372005D04B4 /* XCRemoteSwiftPackageReference "YouTubeKit" */,
+			);
 			productRefGroup = 6557FBC02BB1A029005D04B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				6557FBC52BB1A029005D04B4 /* ContentView.swift in Sources */,
 				6557FBC32BB1A029005D04B4 /* rozellaApp.swift in Sources */,
+				6557FBD12BB1A364005D04B4 /* YoutubeSearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6557FBD22BB1A372005D04B4 /* XCRemoteSwiftPackageReference "YouTubeKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/b5i/YouTubeKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6557FBD32BB1A372005D04B4 /* YouTubeKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6557FBD22BB1A372005D04B4 /* XCRemoteSwiftPackageReference "YouTubeKit" */;
+			productName = YouTubeKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6557FBB72BB1A028005D04B4 /* Project object */;
 }

@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "youtubekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/b5i/YouTubeKit.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0ecf4283524a2b7b117ef1f12b187df650f4affa"
+      }
+    }
+  ],
+  "version" : 2
+}
