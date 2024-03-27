@@ -35,32 +35,35 @@ struct FeedListView: View {
             }
         }
         .onAppear {
-            loadInitialFeeds() // Load feeds on view appearance
+            feeds = RSSFeed.loadFeeds()// Load feeds on view appearance
+        }
+        .onChange(of: feeds) {_, newFeeds in
+            RSSFeed.saveFeed(feeds: newFeeds)
         }
     }
-
-    // Function to load initial feeds (you'll need to implement this)
-    private func loadInitialFeeds() {
-        if let savedFeedsData = UserDefaults.standard.data(forKey: "savedFeeds") {
-            let decoder = JSONDecoder()
-            if let savedFeeds = try? decoder.decode([RSSFeed].self, from: savedFeedsData) {
-                feeds = savedFeeds
-            }
-        } else {
-            // Load some default feeds if there's no saved data
-            feeds = [
-                RSSFeed(title: "Example Feed 1", url: URL(string: "https://example.com/feed.rss")!),
-                // ... Add more default feeds if needed ...
-            ]
-        }
-    }
-    
-    private func saveFeeds() {
-        let encoder = JSONEncoder()
-        if let encodedFeeds = try? encoder.encode(feeds) {
-            UserDefaults.standard.set(encodedFeeds, forKey: "savedFeeds")
-        }
-    }
+//
+//    // Function to load initial feeds
+//    private func loadInitialFeeds() {
+//        if let savedFeedsData = UserDefaults.standard.data(forKey: "savedFeeds") {
+//            let decoder = JSONDecoder()
+//            if let savedFeeds = try? decoder.decode([RSSFeed].self, from: savedFeedsData) {
+//                feeds = savedFeeds
+//            }
+//        } else {
+//            // Load some default feeds if there's no saved data
+//            feeds = [
+//                RSSFeed(title: "Example Feed 1", url: URL(string: "https://example.com/feed.rss")!),
+//                // ... Add more default feeds if needed ...
+//            ]
+//        }
+//    }
+//    
+//    private func saveFeeds() {
+//        let encoder = JSONEncoder()
+//        if let encodedFeeds = try? encoder.encode(feeds) {
+//            UserDefaults.standard.set(encodedFeeds, forKey: "savedFeeds")
+//        }
+//    }
     
 }
 
