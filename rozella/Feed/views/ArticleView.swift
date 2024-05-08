@@ -17,6 +17,7 @@ struct ArticleView: View {
            List(articles) { article in
                NavigationLink(destination: ArticleDetailView(article: article)) {
                    Text(article.title)
+                   
                }
            }
        }

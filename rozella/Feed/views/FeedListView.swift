@@ -16,12 +16,17 @@ struct FeedListView: View {
     var body: some View {
         NavigationStack { // Embed in a NavigationView for navigation structure
             List {
-                ForEach(feeds) { feed in
-                    NavigationLink(destination: ArticleView(feed: feed)) {
-                        Text(feed.title)
-                    }
+                DisclosureGroup("rss") {
+                 
+                        ForEach(feeds) { feed in
+                            NavigationLink(destination: ArticleView(feed: feed)) {
+                                Text(feed.title)
+                            }
+                        }
+                        .onDelete(perform: removeFeeds)
+                    
                 }
-                .onDelete(perform: removeFeeds)
+               
             }
             .navigationTitle("RSS Feeds")
             .toolbar {
@@ -41,7 +46,7 @@ struct FeedListView: View {
             }
             .onChange(of: feeds) {_, newFeeds in
                 RSSFeed.saveFeed(feeds: newFeeds)
-            }
+        }
         }
         
     }

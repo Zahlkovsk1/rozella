@@ -6,11 +6,12 @@ func fetchArticles(from feed: RSSFeed, completion: @escaping ([Article]) -> Void
     parser.parseAsync { result in
         switch result {
         case .success(let feed):
+            
             let articles = feed.rssFeed?.items?.map { item in
                 Article(title: item.title ?? "",
                         description: item.description ?? "",
                         link: URL(string: item.link ?? "https://example.com") ?? URL(string: "https://example.com")!,
-                        scrapedContent: nil) // Initializing with nil
+                        scrapedContent: nil, image: RSSFeedImage()) // Initializing with nil
             } ?? []
             completion(articles)
         case .failure(let error):
