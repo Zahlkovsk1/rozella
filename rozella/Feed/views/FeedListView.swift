@@ -7,17 +7,14 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct FeedListView: View {
     @State private var feeds: [RSSFeed] = []
     @State private var showAddFeedSheet = false // State for the add feed sheet
-
+    @State private var disclosureGroupLabel = "RSS Feeds"
     var body: some View {
-        NavigationStack { // Embed in a NavigationView for navigation structure
+        NavigationStack {
             List {
-                DisclosureGroup("rss") {
-                 
+                DisclosureGroup {
                         ForEach(feeds) { feed in
                             NavigationLink(destination: ArticleView(feed: feed)) {
                                 Text(feed.title)
@@ -25,7 +22,14 @@ struct FeedListView: View {
                         }
                         .onDelete(perform: removeFeeds)
                     
-                }
+                }            label: {
+                    HStack {
+                      Text(disclosureGroupLabel)
+                      Spacer()
+                      Image(systemName: "folder")
+                    }
+                  }
+                
                
             }
             .navigationTitle("RSS Feeds")
