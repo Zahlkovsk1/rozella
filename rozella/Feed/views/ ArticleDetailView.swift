@@ -17,28 +17,20 @@ struct ArticleDetailView: View {
     @State private var isLoading: Bool = true
 
     var body: some View {
-        VStack(alignment: .leading) {
-            
             ScrollView(.vertical) {
-                
-                VStack(alignment: .leading, spacing: 8) {
+                VStack(alignment: .leading){
                     Text(article.title)
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.leading)
                         .lineLimit(nil)
                     
-                    Text(article.description)
-                        .font(.subheadline)
-                        .multilineTextAlignment(.leading)
-                        .lineLimit(nil)
+                    Text(scrapedContent)
+                        .lineSpacing(2)
                 }
-                
-                Text(scrapedContent)
-                    .lineSpacing(2)
-                
+                .padding()
             }
-        }
+        
         .navigationBarTitleDisplayMode(.automatic)
         .task(priority: .high) {
             do {
