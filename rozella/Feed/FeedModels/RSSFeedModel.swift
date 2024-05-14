@@ -5,7 +5,7 @@ struct RSSFeed: Hashable, Identifiable, Codable, Equatable {
     var id = UUID()
     let title: String
     let url: URL
-    
+    var category: String?
     
     static  func saveFeed(feeds: [RSSFeed]) {
         let encoder = JSONEncoder()

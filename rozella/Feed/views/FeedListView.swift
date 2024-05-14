@@ -7,29 +7,21 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct FeedListView: View {
     @State private var feeds: [RSSFeed] = []
     @State private var showAddFeedSheet = false // State for the add feed sheet
-    @State private var disclosureGroupLabel = "RSS Feeds"
+
     var body: some View {
-        NavigationStack {
+        NavigationStack { // Embed in a NavigationView for navigation structure
             List {
-                DisclosureGroup {
-                        ForEach(feeds) { feed in
-                            NavigationLink(destination: ArticleView(feed: feed)) {
-                                Text(feed.title)
-                            }
+                    ForEach(feeds) { feed in
+                        NavigationLink(destination: ArticleView(feed: feed)) {
+                            Text(feed.title)
                         }
-                        .onDelete(perform: removeFeeds)
-                    
-                }            label: {
-                    HStack {
-                      Text(disclosureGroupLabel)
-                      Spacer()
-                      Image(systemName: "folder")
                     }
-                  }
-                
+                    .onDelete(perform: removeFeeds)
                
             }
             .navigationTitle("RSS Feeds")
@@ -45,7 +37,7 @@ struct FeedListView: View {
             .sheet(isPresented: $showAddFeedSheet) {
                 AddFeedView(feeds: $feeds) // Pass the feeds array by reference
             }
-            .onAppear {
+            .task(priority: .high) {
                 feeds = RSSFeed.loadFeeds()// Load feeds on view appearance
             }
             .onChange(of: feeds) {_, newFeeds in
