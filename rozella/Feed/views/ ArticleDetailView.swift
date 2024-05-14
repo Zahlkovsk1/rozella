@@ -56,9 +56,7 @@ struct ArticleDetailView: View {
 
 }
 
-//#Preview {
-//    ArticleDetailView(article:)
-//}
+
 
 
 struct TagStyle: ViewModifier {
@@ -85,3 +83,7 @@ extension View {
     }
     
 }
+
+//#Preview {
+//    ArticleDetailView(article:)
+//}
