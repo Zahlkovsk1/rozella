@@ -25,6 +25,7 @@
 		65F581482BEE06270068B3B9 /* FolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F581472BEE06270068B3B9 /* FolderModel.swift */; };
 		65F5814A2BF34D430068B3B9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F581492BF34D430068B3B9 /* Extensions.swift */; };
 		65F5814C2BF3506A0068B3B9 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F5814B2BF3506A0068B3B9 /* WebView.swift */; };
+		65F5814E2BF3A8D50068B3B9 /* SwiftSoupFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F5814D2BF3A8D50068B3B9 /* SwiftSoupFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		65F581472BEE06270068B3B9 /* FolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderModel.swift; sourceTree = "<group>"; };
 		65F581492BF34D430068B3B9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		65F5814B2BF3506A0068B3B9 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		65F5814D2BF3A8D50068B3B9 /* SwiftSoupFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSoupFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		657A0B072BB428F40083C3B5 /* FeedModels */ = {
 			isa = PBXGroup;
 			children = (
+				65F5814D2BF3A8D50068B3B9 /* SwiftSoupFunctions.swift */,
 				6557FBE42BB1CBDC005D04B4 /* fetchArticles.swift */,
 				65F581472BEE06270068B3B9 /* FolderModel.swift */,
 				6557FBE22BB1CA34005D04B4 /* ArticleModel.swift */,
@@ -222,6 +225,7 @@
 				6557FBDE2BB1C972005D04B4 /* RSSFeedModel.swift in Sources */,
 				6557FBE52BB1CBDC005D04B4 /* fetchArticles.swift in Sources */,
 				6557FBED2BB1D46C005D04B4 /* ArticleView.swift in Sources */,
+				65F5814E2BF3A8D50068B3B9 /* SwiftSoupFunctions.swift in Sources */,
 				6557FBF32BB1D6E8005D04B4 /* FeedListView.swift in Sources */,
 				6557FBE32BB1CA34005D04B4 /* ArticleModel.swift in Sources */,
 				6557FBC32BB1A029005D04B4 /* rozellaApp.swift in Sources */,

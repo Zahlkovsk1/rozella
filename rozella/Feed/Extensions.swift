@@ -11,5 +11,6 @@ import OSLog
 extension Logger {
     
     static let parser: Logger = .init()
+    static let view: Logger = .init()
     
 }
