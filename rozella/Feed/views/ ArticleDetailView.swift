@@ -24,9 +24,11 @@ struct ArticleDetailView: View {
                         .fontWeight(.bold)
                         .multilineTextAlignment(.leading)
                         .lineLimit(nil)
+                        .padding(.bottom, 5)
+    
+                    renderDocument(article.document)
                     
-                    Text(scrapedContent)
-                        .lineSpacing(2)
+                    
                 }
                 .padding()
             }
@@ -36,15 +38,50 @@ struct ArticleDetailView: View {
             do {
                 if let document = article.document {
                     scrapedContent = try document.text()
+//                    let headSection = try document.head() // <head> tags
+                    let body = try document.body() // <body> tags
+//                               let pageTitle = try document.title() // <title> tag
+//                               print(bodySection)
+//                               print(pageTitle)
                 }
             } catch {
                 Logger.parser.error("\(String(describing: error))")
             }
         }
     }
+    
+
+    
+
 
 }
 
 //#Preview {
 //    ArticleDetailView(article:)
 //}
+
+
+struct TagStyle: ViewModifier {
+    
+    var tag: String
+    
+    func body(content: Content) -> some View {
+        switch tag {
+            case "h1":
+                content
+                .font(.largeTitle)
+            default:
+                content
+                .foregroundColor(.red)
+        }
+    }
+    
+}
+
+extension View {
+    
+    func style(_ tag: String) -> some View {
+        modifier(TagStyle(tag: tag))
+    }
+    
+}
