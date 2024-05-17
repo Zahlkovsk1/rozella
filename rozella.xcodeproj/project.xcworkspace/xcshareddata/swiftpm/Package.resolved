@@ -10,12 +10,30 @@
       }
     },
     {
+      "identity" : "openai",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MacPaw/OpenAI.git",
+      "state" : {
+        "revision" : "fd13a41e987004d14f1793c570721953a2767b03",
+        "version" : "0.2.9"
+      }
+    },
+    {
       "identity" : "swiftsoup",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/scinfu/SwiftSoup.git",
       "state" : {
         "revision" : "028487d4a8a291b2fe1b4392b5425b6172056148",
         "version" : "2.7.2"
+      }
+    },
+    {
+      "identity" : "swiftygpt",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/antonio-war/SwiftyGPT",
+      "state" : {
+        "revision" : "7bf281fb4b854e6ac3ad22ec8675b2e5d66f880c",
+        "version" : "3.0.0"
       }
     },
     {
