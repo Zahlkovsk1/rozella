@@ -1,4 +1,4 @@
-Rozella
+## Rozella
 
 Rozella is a native iOS RSS feed reader app that provides a clean and efficient way to stay updated with your favorite news and blog sites. The app leverages advanced libraries like FeedKit and SwiftSoup to parse HTML documents and retrieve content seamlessly. Additionally, Rozella integrates with OpenAI's GPT-4 model for enhanced functionality, offering a unique and powerful user experience.
 
