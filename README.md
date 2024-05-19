@@ -4,7 +4,7 @@ Rozella is a native iOS RSS feed reader app that provides a clean and efficient 
 
 Rozella is built 100% with SwiftUI, making it a modern and efficient application. It serves as a great open-source starter project for other developers to build on and customize according to their preferences. In an era dominated by social media, Rozella offers a personalized and customizable experience for RSS feed enthusiasts.
 
-##Features
+## Features
 
 RSS Feed Parsing: Efficiently parses RSS feeds using FeedKit.
 HTML Parsing: Extracts and processes content from HTML documents with SwiftSoup.
@@ -13,7 +13,7 @@ User-Friendly Interface: Simple and intuitive UI for easy navigation and reading
 Built with SwiftUI: Leverages the latest in iOS development technology for a seamless experience.
 Screenshots
 
-##Installation
+## Installation
 
 To get started with Rozella, follow these steps:
 
@@ -49,7 +49,7 @@ Browse Articles: Navigate through a clean list of articles fetched from your sub
 Read Content: View full articles with the content parsed and displayed neatly.
 AI Features: Interact with OpenAI's GPT-4 for enhanced reading experience.
 
-##Libraries and Tools
+## Libraries and Tools
 
 Rozella utilizes the following libraries to provide a robust and seamless experience:
 
@@ -77,11 +77,11 @@ Copy code
 git push origin feature/YourFeatureName
 Create a Pull Request.
 
-##License
+## License
 
 Rozella is released under the MIT License. See the LICENSE file for more details.
 
-##Contact
+## Contact
 
 If you have any questions or feedback, feel free to reach out:
 
