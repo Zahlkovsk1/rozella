@@ -6,48 +6,11 @@ Rozella is built 100% with SwiftUI, making it a modern and efficient application
 
 ## Features
 
-RSS Feed Parsing: Efficiently parses RSS feeds using FeedKit.
-HTML Parsing: Extracts and processes content from HTML documents with SwiftSoup.
-AI Integration: Utilizes OpenAI's GPT-4 for advanced language model features.
-User-Friendly Interface: Simple and intuitive UI for easy navigation and reading.
-Built with SwiftUI: Leverages the latest in iOS development technology for a seamless experience.
-Screenshots
-
-## Installation
-
-To get started with Rozella, follow these steps:
-
-Clone the repository:
-
-bash
-Copy code
-git clone https://github.com/Zahlkovsk1/rozella.git
-Navigate to the project directory:
-
-bash
-Copy code
-cd rozella
-Open the project in Xcode:
-
-bash
-Copy code
-open rozella.xcodeproj
-Install dependencies using CocoaPods:
-
-bash
-Copy code
-pod install
-Run the app:
-
-Open rozella.xcworkspace in Xcode.
-Select your target device or simulator.
-Press Cmd + R to build and run the app.
-Usage
-
-Add RSS Feeds: Easily add your favorite RSS feed URLs to start receiving updates.
-Browse Articles: Navigate through a clean list of articles fetched from your subscribed feeds.
-Read Content: View full articles with the content parsed and displayed neatly.
-AI Features: Interact with OpenAI's GPT-4 for enhanced reading experience.
+- RSS Feed Parsing: Efficiently parses RSS feeds using FeedKit.
+- HTML Parsing: Extracts and processes content from HTML documents with SwiftSoup.
+- AI Integration: Utilizes OpenAI's GPT-4 for advanced language model features.
+- User-Friendly Interface: Simple and intuitive UI for easy navigation and reading.
+- Built with SwiftUI: Leverages the latest in iOS development technology for a seamless experience.
 
 ## Libraries and Tools
 
@@ -57,7 +20,27 @@ FeedKit: A Swift library for parsing RSS, Atom, and JSON feeds.
 SwiftSoup: A Swift library for parsing HTML.
 OpenAI API: Access to OpenAI's powerful GPT-4 model.
 Youtubekit: A swift  library to interact with youtube api to get yputube feeds inside the app
-##Contributing
+
+## Installation
+
+To get started with Rozella, follow these steps:
+
+Clone the repository:
+```
+git clone https://github.com/Zahlkovsk1/rozella.git
+```
+- Open rozella.xcworkspace in Xcode.
+Select your target device or simulator.
+Press Cmd + R to build and run the app.
+
+## Usage
+
+- Add RSS Feeds: Easily add your favorite RSS feed URLs to start receiving updates.
+- Browse Articles: Navigate through a clean list of articles fetched from your subscribed feeds.
+- Read Content: View full articles with the content parsed and displayed neatly.
+- AI Features: Interact with OpenAI's GPT-4 for enhanced reading experience.
+
+## Contributing
 
 We welcome contributions to improve Rozella! Please follow these steps to contribute:
 
@@ -68,23 +51,17 @@ Copy code
 git checkout -b feature/YourFeatureName
 Make your changes.
 Commit your changes:
-bash
-Copy code
+copy code:
+```
 git commit -m 'Add some feature'
+```
 Push to the branch:
-bash
-Copy code
+Copy code:
+```
 git push origin feature/YourFeatureName
+```
 Create a Pull Request.
 
 ## License
 
 Rozella is released under the MIT License. See the LICENSE file for more details.
-
-## Contact
-
-If you have any questions or feedback, feel free to reach out:
-
-Email: shox@mamadaliev.com
-
-telegramm: @zahlkovski
