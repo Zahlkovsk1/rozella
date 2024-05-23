@@ -40,6 +40,9 @@ Press Cmd + R to build and run the app.
 - Read Content: View full articles with the content parsed and displayed neatly.
 - AI Features: Interact with OpenAI's GPT-4 for enhanced reading experience.
 
+## Waning
+don't forget to insert your own api key, and please give some time for api to process the request.
+
 ## Contributing
 
 We welcome contributions to improve Rozella! Please follow these steps to contribute:
