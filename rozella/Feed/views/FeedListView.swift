@@ -1,59 +1,63 @@
-//
-//  FeedListView.swift
-//  rozella
-//
-//  Created by SHOHJAHON on 25/03/24.
-//
 
-import SwiftUI
 
 import SwiftUI
 
 struct FeedListView: View {
     @State private var feeds: [RSSFeed] = []
-    @State private var showAddFeedSheet = false // State for the add feed sheet
+    @State private var showAddFeedSheet = false
 
     var body: some View {
-        NavigationStack { // Embed in a NavigationView for navigation structure
+        NavigationStack {
             List {
-                    ForEach(feeds) { feed in
-                        NavigationLink(destination: ArticleView(feed: feed)) {
-                            Text(feed.title)
-                        }
+                ForEach(feeds) { feed in
+                    NavigationLink(destination: ArticleView(feed: feed)) {
+                        Text(feed.title)
                     }
-                    .onDelete(perform: removeFeeds)
-               
+                }
+                .onDelete(perform: removeFeeds)
             }
             .navigationTitle("RSS Feeds")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        showAddFeedSheet = true // Show the sheet to add feeds
+                        showAddFeedSheet = true
                     } label: {
                         Image(systemName: "plus")
                     }
                 }
             }
             .sheet(isPresented: $showAddFeedSheet) {
-                AddFeedView(feeds: $feeds) // Pass the feeds array by reference
+                AddFeedView(feeds: $feeds)
             }
             .task(priority: .high) {
-                feeds = RSSFeed.loadFeeds()// Load feeds on view appearance
+                loadFeeds()
             }
-            .onChange(of: feeds) {_, newFeeds in
+            .onChange(of: feeds) { _, newFeeds in
                 RSSFeed.saveFeed(feeds: newFeeds)
+            }
         }
-        }
-        
     }
-    
     
     func removeFeeds(at offsets: IndexSet) {
         feeds.remove(atOffsets: offsets)
-        RSSFeed.saveFeed(feeds: [])
+        RSSFeed.saveFeed(feeds: feeds) // Save the updated list of feeds
+    }
+    
+    func loadFeeds() {
+        // Load feeds from storage
+        feeds = RSSFeed.loadFeeds()
+        
+       
+        if feeds.isEmpty {
+            let defaultFeeds = [
+                RSSFeed(title: "Feed 1", url: URL(string: "https://www.developeracademy.unina.it/en/feed/")!),
+                RSSFeed(title: "Feed 2", url: URL(string: "https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss")!)
+            ]
+            feeds = defaultFeeds
+            RSSFeed.saveFeed(feeds: defaultFeeds)
+        }
     }
 }
-
 
 #Preview {
     FeedListView()

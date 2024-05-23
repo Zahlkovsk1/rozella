@@ -11,7 +11,7 @@ import SwiftUI
 struct rozellaApp: App {
     var body: some Scene {
         WindowGroup {
-            FeedListView()
+           FeedListView()
         }
     }
 }
