@@ -18,7 +18,7 @@ Rozella utilizes the following libraries to provide a robust and seamless experi
 
 - FeedKit: A Swift library for parsing RSS, Atom, and JSON feeds.
 - SwiftSoup: A Swift library for parsing HTML.
-- OpenAI API: Access to OpenAI's powerful GPT-4 model.
+- OpenAI API http request: Access to OpenAI's powerful GPT-4 model.
 - Youtubekit: A swift  library to interact with youtube api to get yputube feeds inside the app
 
 ## Installation
