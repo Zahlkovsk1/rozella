@@ -64,14 +64,6 @@ Copy code:
 git push origin feature/YourFeatureName
 ```
 Create a Pull Request.
-## screenshots
-
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="https://github.com/Zahlkovsk1/rozella/assets/148435929/2f4109bb-9414-4723-9de0-034be734df0e" alt="photo_5357276630478872525_y" style="width: 45%; max-width: 300px; border: 1px solid #ddd; border-radius: 4px; padding: 5px;">
-  <img src="https://github.com/Zahlkovsk1/rozella/assets/148435929/bfe262d9-a265-4fd3-9035-11ab9565f7af" alt="photo_5357276630478872528_y" style="width: 45%; max-width: 300px; border: 1px solid #ddd; border-radius: 4px; padding: 5px;">
-  <img src="https://github.com/Zahlkovsk1/rozella/assets/148435929/7c25996b-eedb-4630-bfcd-606e769ab627" alt="photo_5357276630478872526_y" style="width: 45%; max-width: 300px; border: 1px solid #ddd; border-radius: 4px; padding: 5px;">
-  <img src="https://github.com/Zahlkovsk1/rozella/assets/148435929/c959fe19-182a-4a92-88f6-08dc5f5c2fdc" alt="photo_5357276630478872527_y" style="width: 45%; max-width: 300px; border: 1px solid #ddd; border-radius: 4px; padding: 5px;">
-</div>
 
 ## License
 
